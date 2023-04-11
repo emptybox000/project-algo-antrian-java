@@ -39,7 +39,13 @@ public class App {
                     break;
                 case 2:
                     // TODO: menghapus nomor antrian dari antrianReguler dan
+                    nomorAntri=antrianReguler.get(0);
+                    antrianReguler.remove(0);
                     // menambahkannya ke antrianPending
+                    antrianPending.add(nomorAntri);
+                    System.out.println("===========================================================");
+                    System.out.println("nomer antrian "+nomorAntri+" telah di tambahkan ke antrian Pending");
+                    System.out.println("===========================================================");
                     break;
                 case 3:
                     // TODO :
